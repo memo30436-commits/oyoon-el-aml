@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>عيون الامل</title>
+
+    <link rel="icon" href="logo22.png">
+
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="https:cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+
+    <div class="cart">
+        <div class="top_cart">
+            <h3>عربة تسوق : <span class="Count_item_cart">0</span></h3>
+            <span onclick="open_close_cart()" class="close_cart"><i class="fa-regular fa-circle-xmark"></i></span>
+        </div>
+
+
+        <div class="items_in_cart" id="cart_items">
+
+
+
+        </div>
+
+
+        <div class="bottom_cart">
+            <div class="total">
+                <p>المجموع الفرعي</p>
+                <p class="price_cart_total">0ج.م</p>
+            </div>
+
+            <div class="button_cart">
+                <a href="#" class="btn_cart btn">إتمام الشراء</a>
+                <span onclick="open_close_cart()" class="btn_cart trans_bg btn">متابعة التسوق</span>
+            </div>
+        </div>
+
+    </div>
+
+
+    <header>
+        <div class="top_header">
+            <div class="container">
+                <a href="#" class="logo"> <img src="logo22.png" width="80"  height="80" alt=""></a>
+
+                <form action="" class="search_box">
+                    
+
+                    <input type="text" name="search" id="search" placeholder=" . . . البحث عن  " required>
+
+                    <button type="submit">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+
+
+
+                </form>
+
+
+                <div class="header_icons">
+                    <div class="icon">
+                        <a href="wishlist.html">
+                            <i class="fa-regular fa-heart"></i>
+                            <span class="count count_favourite">0</span>
+                        </a>
+                    </div>
+
+                    <div onclick="open_close_cart()" class="icon">
+                        <a href="#">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            <span class="count count_item_header">0</span>
+                        </a>
+                    </div>
+
+                <div class="icon text-icon">
+                    <a href="login.html"data_title="تسجيل الدخول">
+                        <i class="fa-solid fa-right-to-bracket"></i>
+                    </a>
+                </div> 
+
+                <div class="icon text-icon">
+                    <a href="register" data_title="تسجيل الحساب">
+                        <i class="fa-solid fa-user-plus"></i>
+                    </a>
+                </div>
+
+                </div>
+
+             </div>
+        </div>
+
+
+        <div class="bottom_header">
+            <div class="container">
+                <nav class="nav">
+
+                    <span onclick="open_Menu()" class="open_menu"><i class="fa-solid fa-bars"></i></span>
+
+                    <div class="category_nav">
+
+                        <div onclick="Open_Categ_list()" class="category_btn">
+                            <i class="fa-solid fa-bars"></i>
+                            <p>أقسام المنتجات</p>
+                            <i class="fa-solid fa-angle-down"></i>
+
+                        </div>
+
+                        <ul class="category_nav_list">
+                            <li><a href="category.html?type=metal_frames">شنابر معدن</a></li>
+                            <li><a href="category.html?type=metal_fashion">شنابر معدن فاشون</a></li>
+                            <li><a href="category.html?type=plastic_frames">شنابر بلاستيك</a></li>
+                            <li><a href="category.html?type=children_frames">شنابر اطفال</a></li>
+                            <li><a href="category.html?type=lenses_glasses">عدسات(طبية-شمسية)</a></li>
+                            <li><a href="category.html?type=lenses">عدسات طبية لاصقة(لينسيز)</a></li>
+                            <li><a href="category.html?type=sunglasses">نظارات شمسية</a></li>
+                            <li><a href="category.html?type=clipon_frames">شنابر كلبسات</a></li>
+                        </ul>
+                    </div>
+
+                    <ul class="nav_links">
+
+                        <span onclick="open_Menu()" class="close_menu"><i class="fa-regular fa-circle-xmark"></i></span>
+
+                        <li class="active"><a href="index.html">الرئيسية</a></li>
+                        <li><a href="#">نظارات طبية</a></li>
+                        <li><a href="#">نظارات شمسية</a></li>
+                        <li><a href="#">ماركات عالمية</a></li>
+                        <li><a href="#">عروض</a></li>
+                        <li><a href="#about_section">من نحن</a></li>
+
+                    </ul>
+
+                    <div class="whatsapp_nav">
+                        <a href="https://wa.me/201030025471" target="_blank">
+                            <span>تواصل معنا</span>
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </a>
+                    </div>
+
+
+                </nav>
+
+            </div>
+        </div>
+    </header>
+
+
+    <h1 id="page-title" style="font-weight: bold; text-align: center; margin-top: 30px;">اسم القسم</h1>
+
+    <div id="category-products-grid" class="products-grid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 20px; padding: 40px;">
+
+    </div>
+
+    <script src="JS/main.js"></script>
+    <script src="JS/category_page.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>عيون الامل</title>
+    
+
+    <link rel="icon" href="logo22.png">
+
+
+  
+
+     <!-- Link Swiper's CSS -->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
+
+
+
+       <!-- File CSS -->
+     <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+
+
+    <div class="cart">
+        <div class="top_cart">
+            <h3>عربة تسوق : <span class="Count_item_cart">0</span></h3>
+            <span onclick="open_close_cart()" class="close_cart"><i class="fa-regular fa-circle-xmark"></i></span>
+        </div>
+
+
+        <div class="items_in_cart" id="cart_items">
+
+
+
+        </div>
+
+
+        <div class="bottom_cart">
+            <div class="total">
+                <p>المجموع الفرعي</p>
+                <p class="price_cart_total">0ج.م</p>
+            </div>
+
+            <div class="button_cart">
+                <a href="#" class="btn_cart btn">إتمام الشراء</a>
+                <span onclick="open_close_cart()" class="btn_cart trans_bg btn">متابعة التسوق</span>
+            </div>
+        </div>
+
+    </div>
+
+
+    <header>
+        <div class="top_header">
+            <div class="container">
+                <a href="#" class="logo"> <img src="logo22.png" width="80"  height="80" alt=""></a>
+
+                <form action="" class="search_box">
+                    
+
+                    <input type="text" name="search" id="search" placeholder=" . . . البحث عن  " required>
+
+                    <button type="submit">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+
+
+
+                </form>
+
+
+                <div class="header_icons">
+                    <div class="icon">
+                        <a href="wishlist.html">
+                            <i class="fa-regular fa-heart"></i>
+                            <span class="count count_favourite">0</span>
+                        </a>
+                    </div>
+
+                    <div onclick="open_close_cart()" class="icon">
+                        <a href="#">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            <span class="count count_item_header">0</span>
+                        </a>
+                    </div>
+
+                <div class="icon text-icon">
+                    <a href="login.html"data_title="تسجيل الدخول">
+                        <i class="fa-solid fa-right-to-bracket"></i>
+                    </a>
+                </div> 
+
+                <div class="icon text-icon">
+                    <a href="register" data_title="تسجيل الحساب">
+                        <i class="fa-solid fa-user-plus"></i>
+                    </a>
+                </div>
+
+                </div>
+
+             </div>
+        </div>
+
+
+        <div class="bottom_header">
+            <div class="container">
+                <nav class="nav">
+
+                    <span onclick="open_Menu()" class="open_menu"><i class="fa-solid fa-bars"></i></span>
+
+                    <div class="category_nav">
+
+                        <div onclick="Open_Categ_list()" class="category_btn">
+                            <i class="fa-solid fa-bars"></i>
+                            <p>أقسام المنتجات</p>
+                            <i class="fa-solid fa-angle-down"></i>
+
+                        </div>
+
+                        <ul class="category_nav_list">
+                            <li><a href="category.html?type=metal_frames">شنابر معدن</a></li>
+                            <li><a href="category.html?type=metal_fashion">شنابر معدن فاشون</a></li>
+                            <li><a href="category.html?type=plastic_frames">شنابر بلاستيك</a></li>
+                            <li><a href="category.html?type=children_frames">شنابر اطفال</a></li>
+                            <li><a href="category.html?type=lenses_glasses">عدسات(طبية-شمسية)</a></li>
+                            <li><a href="category.html?type=lenses">عدسات طبية لاصقة(لينسيز)</a></li>
+                            <li><a href="category.html?type=sunglasses">نظارات شمسية</a></li>
+                            <li><a href="category.html?type=clipon_frames">شنابر كلبسات</a></li>
+                        </ul>
+                    </div>
+
+                    <ul class="nav_links">
+
+                        <span onclick="open_Menu()" class="close_menu"><i class="fa-regular fa-circle-xmark"></i></span>
+
+                        <li class="active"><a href="index.html">الرئيسية</a></li>
+                        <li><a href="#">نظارات طبية</a></li>
+                        <li><a href="#sun_glasses">نظارات شمسية</a></li>
+                        <li><a href="#">ماركات عالمية</a></li>
+                        <li><a href="#offers_section">عروض</a></li>
+                        <li><a href="#about_section">من نحن</a></li>
+
+                    </ul>
+
+                    <div class="whatsapp_nav">
+                        <a href="https://wa.me/201030025471" target="_blank">
+                            <span>تواصل معنا</span>
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </a>
+                    </div>
+
+
+                </nav>
+
+            </div>
+        </div>
+    </header>
+
+
+
+    <section class="slider">
+        <div class="container">
+        
+            <!-- Swiper -->
+            <div class="slide-swp mySwiper">
+
+                   <div class="swiper-wrapper">
+                       <div class="swiper-slide">
+                          <a href="#"><img src="img/بانر1.png" alt=""></a>
+                       </div>
+                       <div class="swiper-slide">
+                          <a href="category.html?type=children_frames"><img src="img/بانر6.png" alt=""></a>
+                       </div>
+
+                        <div class="swiper-slide">
+                          <a href="category.html?type=sunglasses"><img src="img/بانر5.png" alt=""></a>
+                       </div>
+
+                        <div class="swiper-slide">
+                          <a href="category.html?type=lenses"><img src="img/بانر لينسيز.png" alt=""></a>
+                       </div>
+
+                   </div>
+                   <div class="swiper-pagination"></div>
+            </div>
+
+    </section>
+
+
+
+    <div class="banners_3">
+        <div class="container">
+
+
+            <div class="box">
+                <a href="category.html?type=clipon_frames" class="link_btn"></a>
+
+                <img src="img/كلبسات 1.jpg" alt="">
+                <div class="text">
+                    <h5>طقم نظارات كلاسيكي</h5>
+                    <h5>عدسات مغناطيسية متعددة</h5>
+                    <div class="sale">
+                        <p>خصم <br> يصل إلي</p>
+                        <span>24%</span>
+                        
+                    </div>
+
+                    <h6>تسوق الآن</h6>
+
+                </div>
+            </div>
+
+
+             <div class="box">
+                <a href="category.html?type=clipon_frames" class="link_btn"></a>
+
+                <img src="img/كلبسات 2.jpg" alt="">
+                <div class="text">
+                    <h5>أحدث صيحات الموضة</h5>
+                    <h5>إطلالة عصرية تناسبك</h5>
+                    <div class="sale">
+                        <p>تخفيض <br> لفترة محدودة</p>
+                        <span>24%</span>
+                        
+                    </div>
+
+                    <h6>اكتشف المزيد</h6>
+
+                </div>
+            </div>
+
+
+            <div class="box">
+                <a href="category.html?type=clipon_frames" class="link_btn"></a>
+
+                <img src="img/كلبسات 3.jpg" alt="">
+                <div class="text">
+                    <h5>حماية كاملة لعينك</h5>
+                    <h5>أفضل جودة وأقل سعر</h5>
+                    <div class="sale">
+                        <p>وفر <br> حتي</p>
+                        <span>24%</span>
+                        
+                    </div>
+
+                    <h6>أحصل عليه الآن</h6>
+
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+
+    <div class="slider_products slide" id="offers_section">
+
+        <div class="container">
+
+            <div class="slide_product mySwiper">
+
+                <div class="top_slide">
+                    <h2><i class="fa-solid fa-tags"></i>عروض مميزة</h2>
+                </div>
+
+                <div class="products swiper-wrapper" id="swiper_items_sale">
+
+
+  
+
+  
+
+                </div>
+
+
+                <div class="swiper-button-next btn_Swip">
+                    <i class="fa-solid fa-chevron-left"></i>
+                </div>
+
+                <div class="swiper-button-prev btn_Swip">
+                    <i class="fa-solid fa-chevron-right"></i>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="slider_products slide">
+
+        <div class="container">
+
+            <div class="slide_product mySwiper">
+
+                <div class="top_slide">
+                    <h2><i class="fa-solid fa-tags"></i> عدسات (طبية-شمسية)</h2>
+                </div>
+
+                <div class="products swiper-wrapper" id="swiper_lenses_glasses">
+
+                    
+
+                </div>
+
+
+                <div class="swiper-button-next btn_Swip">
+                    <i class="fa-solid fa-chevron-left"></i>
+                </div>
+
+                <div class="swiper-button-prev btn_Swip">
+                    <i class="fa-solid fa-chevron-right"></i>
+                </div>
+            </div>
+
+        </div>
+     </div>>
+
+    <div class="slider_products slide">
+
+        <div class="container">
+
+            <div class="slide_product mySwiper">
+
+                <div class="top_slide">
+                    <h2><i class="fa-solid fa-tags"></i> عدسات طبية لاصقة (لينسيز)</h2>
+                </div>
+
+                <div class="products swiper-wrapper" id="swiper_lenses">
+
+                    
+
+                </div>
+
+
+                <div class="swiper-button-next btn_Swip">
+                    <i class="fa-solid fa-chevron-left"></i>
+                </div>
+
+                <div class="swiper-button-prev btn_Swip">
+                    <i class="fa-solid fa-chevron-right"></i>
+                </div>
+            </div>
+
+        </div>
+     </div>
+
+    <div class="slider_products slide" id="sun_glasses">
+
+
+
+        <div class="container">
+
+            <div class="slide_product mySwiper">
+
+                <div class="top_slide">
+                    <h2><i class="fa-solid fa-tags"></i>نظارات شمسية</h2>
+                </div>
+
+                <div class="products swiper-wrapper" id="swiper_sunglasses">
+
+                    
+
+                </div>
+
+
+                <div class="swiper-button-next btn_Swip">
+                    <i class="fa-solid fa-chevron-left"></i>
+                </div>
+
+                <div class="swiper-button-prev btn_Swip">
+                    <i class="fa-solid fa-chevron-right"></i>
+                </div>
+            </div>
+
+        </div>
+     </div>
+
+    <div class="slider_products slide">
+
+        <div class="container">
+
+            <div class="slide_product mySwiper">
+
+                <div class="top_slide">
+                    <h2><i class="fa-solid fa-tags"></i>شنابر كلبسات</h2>
+                </div>
+
+                <div class="products swiper-wrapper" id="swiper_clipon_frames">
+
+                    
+
+                </div>
+
+
+                <div class="swiper-button-next btn_Swip">
+                    <i class="fa-solid fa-chevron-left"></i>
+                </div>
+
+                <div class="swiper-button-prev btn_Swip">
+                    <i class="fa-solid fa-chevron-right"></i>
+                </div>
+            </div>
+
+        </div>
+     </div>
+
+
+
+    <footer id="about_section">
+        <div class="container">
+
+            <div class="big_row">
+                <img class="logo_footer" src="logo22.png" alt="">
+
+                <p>متجر عيون الامل - وجهتك الأولي لأحدث النظارات الطبية والشمسية والعدسات بماركات عالمية وجودة تضمن راحة وسلامة عينك</p>
+                <p>الفرع الرئيسي (المركز العلمي للبصريات - عيون 1) - الاقصر - ميدان الحوض - ش يوسف حسن بجوار المكتبة الاسلامية</p>
+                <p>الفرع الثاني (عيون الامل) الاقصر - ش خالد بن الوليد متفرع من ش التلفزيون</p>
+
+                <div class="icons_footer">
+                    <a href="#"><i class="fa-solid fa-phone"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                </div>
+            </div>
+
+            <div class="row">
+                <h4>أقسام المنتجات</h4>
+
+                <div class="links">
+                    <a href="category.html?type=metal_frames"><i class="fa-solid fa-caret-right"></i>شنابر معدن</a>
+                    <a href="category.html?type=metal_fashion"><i class="fa-solid fa-caret-right"></i>شنابر معدن فاشون</a>
+                    <a href="category.html?type=plastic_frames"><i class="fa-solid fa-caret-right"></i>شنابر بلاستيك</a>
+                    <a href="category.html?type=children_frames"><i class="fa-solid fa-caret-right"></i>شنابر اطفال</a>
+                    <a href="category.html?type=offers"><i class="fa-solid fa-caret-right"></i>عدسات(طبية-شمسية)</a>
+                    <a href="category.html?type=lenses"><i class="fa-solid fa-caret-right"></i>عدسات طبية لاصقة(لينسيز)</a>
+                    <a href="category.html?type=sunglasses"><i class="fa-solid fa-caret-right"></i>نظارات شمسية</a>
+                    <a href="ategory.html?type=clipon_frames"><i class="fa-solid fa-caret-right"></i>شنابر كلبسات</a>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <h4>روابط سريعة</h4>
+
+                <div class="links">
+                    <a href="index.html"><i class="fa-solid fa-caret-right"></i> الرئيسية</a>
+                    <a href="#"><i class="fa-solid fa-caret-right"></i> من نحن</a>
+                    <a href="#"><i class="fa-solid fa-caret-right"></i> ماركات عالمية</a>
+                    <a href="#"><i class="fa-solid fa-caret-right"></i> عروض وتخفيضات</a>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <h4>الدعم والمساعدة</h4>
+
+                <div class="links">
+                    <a href="#"><i class="fa-solid fa-caret-right"></i> مركز الدعم</a>
+                    <a href="#"><i class="fa-solid fa-caret-right"></i> الشروط والأحكام</a>
+                    <a href="#"><i class="fa-solid fa-caret-right"></i> سياسة الخصوصية</a>
+                    <a href="#"><i class="fa-solid fa-caret-right"></i> المساعدة</a>
+                    <a href="#"><i class="fa-solid fa-caret-right"></i> الأسئلة الشائعة</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="bottom_footer">
+            <div class="container">
+                <p>&copy; <span>عيون الامل</span> All Rights Reserved.</p>
+                <p style="font-size: 13px; margin-top: 5px; color: #888;">تصميم وتطوير: <span>تيم الامل</span></p>
+
+            </div>
+        </div>
+    </footer>
+
+
+
+
+    
+    <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+
+    <!-- File JS -->
+    
+    <script src="JS/swiper.js"></script>
+    <script src="JS/items_home.js"></script>
+    <script src="JS/main.js"></script>
+
+</body>
+</html>
